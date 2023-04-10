@@ -1,0 +1,40 @@
+
+
+<%- include("header") -%>
+<body>
+
+
+    <div class="box" id="heading">
+        <h1><%= Title %></h1>
+    </div>
+    
+    <div class="box">
+
+        <% for(var i=0;i<newListItem.length;i++){ %>
+            <div class="item">
+                <input type="checkbox" name="" id="">
+                <p><%= newListItem[i] %></p>
+            </div>
+        <% } %>
+
+
+        <form action="/" method="post" >
+            <input type="text" name="todo" placeholder="New Item" autocomplete="off">
+            <button type="submit" name="lBtn" value=<%= Title %>>+</button>
+        </form>
+    </div>
+    
+
+
+    
+</body>
+
+
+<%- include("footer") -%>
+
+
+</html>
+
+
+<!-- <%=   %>   for value passed from app.js to ejs file. -->
+<!-- <%   %> for plain javascript e.g for if else statements or loops -->
